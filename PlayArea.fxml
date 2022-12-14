@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.PlayAreacontroller"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fitWidth="500" fitHeight="500" layoutX="300" >
+        <image>
+            <Image url="@snakeandladderboard.jpg"/>
+        </image>
+
+        </ImageView>
+        <ImageView fx:id="Player1" fitWidth="20" fitHeight="50" layoutY="450" layoutX="250" >
+            <image>
+                <Image url="@red.jpeg"/>
+            </image>
+
+        </ImageView>
+        <ImageView fx:id="Player2" fitWidth="20" fitHeight="50" layoutY="450" layoutX="270" >
+            <image>
+                <Image url="@blue.jpeg"/>
+            </image>
+
+        </ImageView>
+        <ImageView fitWidth="80" fitHeight="80" layoutY="150" layoutX="150" onMouseClicked="#roll" >
+            <image>
+                <Image url="@dice.jpeg"/>
+            </image>
+
+        </ImageView>
+        <ImageView fitWidth="20" fitHeight="50" layoutY="300" layoutX="50" >
+            <image>
+                <Image url="@red.jpeg"/>
+            </image>
+
+        </ImageView>
+        <Text layoutY="350" layoutX="80" text="Player 1"></Text>
+        <ImageView fitWidth="20" fitHeight="50" layoutY="400" layoutX="50" >
+            <image>
+                <Image url="@blue.jpeg"/>
+            </image>
+
+        </ImageView>
+        <Text layoutY="450" layoutX="80" text="Player 2"></Text>
+
+        <Text fx:id="changeturn" layoutY="250" layoutX="150" text="Player 1's Turn"></Text>
+        <Text fx:id="number" layoutY="275" layoutX="180"></Text>
+
+    </children>
+</AnchorPane>
